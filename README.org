@@ -1,0 +1,58 @@
+[[http://spacemacs.org][file:https://cdn.rawgit.com/syl20bnr/spacemacs/442d025779da2f62fc86c2082703697714db6514/assets/spacemacs-badge.svg]]
+[[htts://www.typescriptlang.org/][file:https://img.shields.io/static/v1.svg?label=TS&message=TypeScript&color=%233178C6]]
+
+#+title: Typescript Express.js
+
+#+begin_quote
+If you’re new to TypeScript, checkout [this handy cheatsheet](https://devhints.io/typescript)
+#+end_quote
+
+This is a starter template repository for setting up an Express.js app with TypeScript.
+
+It implements 2 =GET= endpoints =/ping= and =/pong= with tests using [[https://mochajs.org/][Mocha]], [[https://www.chaijs.com/][Chai]] and [[https://github.com/visionmedia/supertest][SuperTest]].
+
+[[https://prettier.io/][Prettier]] and [[https://eslint.org/][ESlint]] is also setup for you. Feel free to send a PR if you think something needs to change.
+
+** Build
+
+To run in development mode use:
+
+#+begin_src bash
+  npm run watch-node
+#+end_src
+
+To do a one-off build, use
+
+#+begin_src bash
+  npm run build
+#+end_src
+
+** Lint
+
+Code quality is set up for you with =eslint=.
+
+Run it with:
+
+#+begin_src bash
+  npm run lint
+#+end_src
+
+** Tests
+
+=Mocha= tests are set up to run with:
+
+#+begin_src bash
+  npm test
+#+end_src
+
+To run tests in watch mode use:
+
+#+begin_src bash
+  npm run watch-test
+#+end_src
+
+** Continuous Integration
+
+*** Github Actions
+
+=.github/workflows/build.yml=
